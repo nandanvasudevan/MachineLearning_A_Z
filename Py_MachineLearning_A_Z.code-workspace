@@ -6,6 +6,7 @@
 	],
 	"settings": {
 		"cSpell.words": [
+			"astype",
 			"numpy",
 			"pyplot",
 			"quantile",
