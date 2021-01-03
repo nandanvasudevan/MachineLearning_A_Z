@@ -27,3 +27,8 @@ In this method the line that gives the lowest squared error is chosen.
 1. Error is calculated as difference between the actual value and the predicted value
 2. The errors from each point are squared and integrated 
 3. The line with the lowest sum is chosen
+
+### Linear Regression example
+The dataset used here is the salary dataset.
+
+![](simpleRegression.svg)
