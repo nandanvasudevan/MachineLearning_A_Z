@@ -32,3 +32,27 @@ In this method the line that gives the lowest squared error is chosen.
 The dataset used here is the salary dataset.
 
 ![](simpleRegression.svg)
+
+## Multiple Linear Regression
+
+Multiple linear regression includes a single dependent variable and multiple independent variables.
+```
+y = b0 + x1*b1 + x2*b2 + ... + xn*bn
+```
+
+> # Dummy Variables
+> 
+> While handling categorical data, care must be taken to not include anything more than what is actually necessary.
+> 
+> For instance, in cases where there are only two distinct items in a class, the second item can be safely discarded (without loosing data) as the lack of one means the existence of the other.
+> ## Dummy Variable Trap
+> In the above case, if we include both the dummy variables, the regression model will fail to distinguish between the effects of the two dummy variables.
+> The lack of the a categorical class makes it the default class in the model and therefore needn't be included in the data used for training the model.
+> 
+> `y = b0 + ... + bn-1*(dummy1) + bn*(dummy2) `
+>
+> The b0 term includes the omitted item.
+> The terms b0, bn and bn-1 should not all be present at the same time.
+>> **Always omit one dummy variable**
+
+
